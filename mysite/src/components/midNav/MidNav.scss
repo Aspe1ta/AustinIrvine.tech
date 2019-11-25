@@ -1,0 +1,76 @@
+.headerBox{
+    display:-webkit-flex;
+    justify-content: center;
+    align-items: center;
+    height: 33.3vh;
+}
+
+.portfolioBackground{
+  display:-webkit-flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./../../assets/Find.png');
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: padding 2s;
+
+  &:hover {
+    transition: padding 2s;
+    padding-top: 5vh;
+    
+  }
+}
+
+
+.portfolioBackground2{
+    display:-webkit-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./../../assets/mePic.jpg');
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: padding 2s;
+
+    
+
+    &:hover {
+      transition: padding 2s;
+      padding-top: 5vh;
+        
+    }
+  }
+
+  .portfolioBackground3{
+    display:-webkit-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./../../assets/dev.png');
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: padding 2s;
+
+    
+
+    &:hover {
+      transition: padding 2s;
+      padding-top: 5vh;
+        
+    }
+  }
+
+  .twoEm{
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      width: 100%;
+    font-size: 2.5em;
+      }
+    
+  }
