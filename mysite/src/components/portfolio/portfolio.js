@@ -28,8 +28,8 @@ class Portfolio extends React.Component {
                 <Carousel.Caption>
                   <h3 className="carHead">Find Your Fight</h3>
                   <p className="carDesc white">
-                    Find your fight is a webapp for desktop that helps people who enjoy
-                    fighting games find fighting game events, tournaments and
+                    Find your fight is a webapp for desktop I made during a 3 day code challenge. It is aimed to help people who enjoy
+                    fighting games, find fighting game events, tournaments and
                     local gatherings near them. It does this by crowd-sourcing
                     the locations and events from event organizers who register
                     their event on the site.
