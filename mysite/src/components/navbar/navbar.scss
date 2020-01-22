@@ -35,23 +35,56 @@
   }
 }
 
+.arrowContain{
+        width: 100vw;
+        margin-top: 40vh;
+        display: flex;
+        justify-content: center;
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+                margin-top: 30vh;
+        }
+}
+
+.triangle{
+  filter: invert(100);
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+        width: 18vw;
+        height: 16vw;
+        background-image: url("./../../assets/triangle.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+
+.triText{
+  font-weight: bolder;
+}
+
+.rotate{
+  transform: rotate(180deg);
+}
+
 .arrowBox {
+        top: 0;
   cursor: pointer;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+  width: 10vw;
+  
+}
 
-  margin-top: 70vh;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    margin-top: 50vh;
-  }
+.invert{
+  filter: invert(100);
+  margin-top: 6vh;
 }
 
 .arrowImg {
-  height: 40%;
+  
 }
 
 .blackArrowBox {
@@ -86,78 +119,33 @@
 }
 
 .heartbeat {
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
+	animation: heartbeat 6s ease-in-out both;
 }
 
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
 @keyframes heartbeat {
   from {
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transform-origin: center center;
     transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   10% {
-    -webkit-transform: scale(0.91);
     transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   17% {
-    -webkit-transform: scale(0.98);
     transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   33% {
-    -webkit-transform: scale(0.87);
     transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   45% {
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 }
+
 
 .slide-in-top {
   -webkit-animation: slide-in-top 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s
@@ -186,6 +174,36 @@
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
     opacity: 1;
   }
 }

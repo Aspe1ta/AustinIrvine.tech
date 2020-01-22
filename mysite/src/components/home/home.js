@@ -19,6 +19,7 @@ import {
 import ArrowW from "./../../assets/arrowwhite.png";
 import ArrowB from "./../../assets/arrowblack.png";
 
+
 let name = "<Austin Irvine/>";
 
 class Home extends React.Component {
@@ -102,9 +103,13 @@ class Home extends React.Component {
                 </Link>
               </div>
 
+              <div className="arrowContain">
+              
+              <div className="triangle heartbeat">
+                  
               <Link
                 activeClass="active"
-                className="arrowBox slide-in-top"
+                className="arrowBox rotate"
                 to="gradient"
                 spy={true}
                 smooth={true}
@@ -112,11 +117,14 @@ class Home extends React.Component {
                 duration={3000}
                 containerId="AboutBox"
               >
-                <h3 className="white">Shall We?</h3>
-                <div className="heartbeat">
-                  <img src={ArrowW} className="arrowImg" />
+                <h1 className='triText text-focus-in' id='blackText'>Shall We?</h1>
+                <div className="text-focus-in">
+                  <img src={ArrowW} className="arrowImg invert" />
                 </div>
               </Link>
+              
+              </div>
+              </div>
 
               <Element name="gradient" className="gradient">
                 <div className="howdyBox">

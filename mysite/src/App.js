@@ -19,20 +19,6 @@ class App extends React.Component {
         <div className="videobox">
           {/* overlay start */}
           <div className="reveal slide-out-bck-center">
-            <div className="loadBox ">
-              <div className="lds-css ng-scope rotate-out-center">
-                <div className="lds-double-ring">
-                  <div></div>
-                  <div></div>
-                  <div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <video
             className="video"
