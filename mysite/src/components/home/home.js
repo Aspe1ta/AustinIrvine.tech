@@ -117,7 +117,7 @@ class Home extends React.Component {
                 duration={3000}
                 containerId="AboutBox"
               >
-                <h1 className='triText text-focus-in' id='blackText'>Shall We?</h1>
+                <h2 className='triText text-focus-in' id='blackText'>Shall We?</h2>
                 <div className="text-focus-in">
                   <img src={ArrowW} className="arrowImg invert" />
                 </div>

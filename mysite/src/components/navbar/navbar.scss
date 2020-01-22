@@ -50,8 +50,8 @@
   transform: rotate(180deg);
   display: flex;
   justify-content: center;
-        width: 18vw;
-        height: 16vw;
+        width: 15vw;
+        height: 30vh;
         background-image: url("./../../assets/triangle.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -59,6 +59,10 @@
 
 .triText{
   font-weight: bolder;
+  text-align: center;
+  
+
+
 }
 
 .rotate{
@@ -74,13 +78,12 @@
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  width: 10vw;
+  
   
 }
 
 .invert{
   filter: invert(100);
-  margin-top: 6vh;
 }
 
 .arrowImg {
